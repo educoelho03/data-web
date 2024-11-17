@@ -1,0 +1,32 @@
+.title-block {
+    padding-top: 77px;
+    background-color: #948979;
+  }
+  
+.content {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-row-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #474747;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  padding-left: .5rem;
+}
+
+.content-row-subtitle {
+  font-size: 0.9rem;
+  color: #fff;
+  padding-left: .5rem;
+}
