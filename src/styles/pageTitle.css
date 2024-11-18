@@ -3,11 +3,11 @@
     background-color: #948979;
   }
   
-.content {
+.page-title-content {
   padding-top: 100px;
   padding-bottom: 50px;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
 
 .container {

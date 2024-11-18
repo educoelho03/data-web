@@ -1,34 +1,40 @@
+.data-table-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+}
+
 .data-table {
+    background-color: #fff;
     width: 100%;
     overflow-x: auto;
+    border-radius: 5px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
 }
 
-.data-table thead th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.data-table th {
-    background-color: #f2f2f2;
-}
-
-th, td {
+td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
 }
 
-th {
-    background-color: #f2f2f2;
+.data-key {
+    background-color: blue;
+    width: 30px;
 }
 
-tr:hover {
-    background-color: #f1f1f1;
-}
+
+
 

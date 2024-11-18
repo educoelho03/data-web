@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react';
-
 import './styles/globalStyles.css';
 import Navbar from './components/Navbar';
 import PageTitle from './components/PageTitle';

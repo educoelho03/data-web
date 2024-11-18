@@ -1,4 +1,4 @@
-import logo from '../assets/react.svg'
+import logo from '../assets/logo_branco_contancia.png'
 import '../styles/navbar.css'
 
 function Navbar() {
