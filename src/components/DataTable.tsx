@@ -5,17 +5,6 @@ import '../styles/dataTable.css';
 import { SlIcon, SlSelect, SlOption } from '@shoelace-style/shoelace/dist/react';
 import DataTableSectionOne from './DataTableSectionOne';
 
-
-// const fundos = [
-//   'CONSTANCIA ABSOLUTO FIM',
-//   'FIA CONSTANCIA CAMBOINHAS',
-//   'CONSTANCIA PREVIDENCIARIO FIM',
-//   'CONSTANCIA ICATU PREVIDENCIARIO FIM CRÉD',
-//   'CONSTANCIA FUNDAMENTO FIA',
-//   'CONSTANCIA COVILHÃ LONG BIAS FI MULT',
-//   'CONSTANCIA ALOCAÇÃO ATIVA FIC DE FI RF'
-// ]
-
 interface DataRow {
   COLUNA: string;
   VALORES: string;
@@ -46,13 +35,15 @@ const DataTable = () => {
   return (
     <div>
       <div className="filter-container">
-        <div className="content">
-          <h5 style={{ fontSize: 'normal', fontWeight: '600' }}>Filtrar por fundo:</h5>
+        <div className="filter-content">
+          <h5 style={{ fontSize: '18px', fontWeight: 'lighter' }}>Filtrar por fundo:</h5>
           <SlSelect
+            className='select-box'
             name="type"
             value={selectedFundo}
             size="medium"
             onSlChange={(e) => {
+              // TODO : CORRIGIR LINHA DE CODIGO ABAIXO
               const value = e.target.value;
               setSelectedFundo(value);
             }}

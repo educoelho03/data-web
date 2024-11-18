@@ -5,6 +5,17 @@
     margin-right: 12rem;
 }
 
+.filter-content {
+    padding-top: 50px;
+    /* padding-bottom: 15px; */
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.select-box {
+    width: 25%;
+}
+
 h2 {
     font-size: 30px;
     font-weight: lighter;
