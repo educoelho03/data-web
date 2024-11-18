@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar />
       <PageTitle />
-      <DataTable
+      <DataTable />
     </div>
   )
 }
