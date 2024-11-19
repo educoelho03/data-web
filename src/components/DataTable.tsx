@@ -15,9 +15,9 @@ const DataTable = () => {
   const [selectedFundo, setSelectedFundo] = useState<string>('CONSTANCIA_ABSOLUTO_FIM');
 
   // Função para buscar dados
-  async function fetchData(type: string) {
+  async function fetchData() {
     try {
-      const response = await axios.get(`http://localhost:5000/api/data?type=${type}`);
+      const response = await axios.get(`http://localhost:5000/api/data`);
       console.log(response.data);
 
       if (Array.isArray(response.data)) {
@@ -29,7 +29,7 @@ const DataTable = () => {
   }
 
   useEffect(() => {
-    fetchData(selectedFundo);
+    fetchData();
   }, [selectedFundo]);
 
   return (
