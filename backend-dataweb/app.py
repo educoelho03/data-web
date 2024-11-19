@@ -12,7 +12,7 @@ def test_route():
 @app.route('/api/data')
 def get_data():
     try:    
-        file_path = 'C:/Users/jzuanon/Documents/joao/code/react/compliance-page/data-web/backend-dataweb/service/Template-teste.CSV'
+        file_path = 'C:/Users/Eduardo/ReactProjects/data-web/backend-dataweb/service/template-teste.CSV'
         data = pd.read_csv(file_path, delimiter=';')
         response_data = data.to_dict(orient='records')
         return jsonify(response_data), 200

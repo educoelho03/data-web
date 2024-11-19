@@ -12,7 +12,7 @@ interface DataRow {
 
 const DataTable = () => {
   const [data, setData] = useState<DataRow[]>([]);
-  const [selectedFundo, setSelectedFundo] = useState<string>("CONSTANCIA ABSOLUTO FIM");
+  const [selectedFundo, setSelectedFundo] = useState<string>('CONSTANCIA_ABSOLUTO_FIM');
 
   // Função para buscar dados
   async function fetchData(type: string) {
@@ -38,13 +38,12 @@ const DataTable = () => {
         <div className="filter-content">
           <h5 style={{ fontSize: '18px', fontWeight: 'lighter' }}>Filtrar por fundo:</h5>
           <SlSelect
-            className='select-box'
+            className="select-box"
             name="type"
             value={selectedFundo}
             size="medium"
             onSlChange={(e) => {
-              // TODO : CORRIGIR LINHA DE CODIGO ABAIXO
-              const value = e.target.value;
+              const value = (e.target as HTMLSelectElement).value;
               setSelectedFundo(value);
             }}
           >
